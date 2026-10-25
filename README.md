@@ -13,7 +13,7 @@ Please search existing issues before opening a new one. Add clear steps to repro
 
 For bug reports, include the CreativeLock version, server software and Minecraft version, Java version, and FAWE or WorldEdit version when relevant. Also mention the player's game mode and relevant CreativeLock permissions.
 
-The only server build verified so far is Paper 26.1.2 (build 74) on Java 25. Compatibility with other Paper versions and with Spigot/Bukkit has not been verified. FastAsyncWorldEdit is optional; it is needed for FAWE edit tracking and WorldEdit selection features.
+Paper 26.1.2 build 74 and Paper 26.3 build 222 have been tested on Java 25. Other Paper builds and Bukkit/Spigot compatibility have not been verified. FastAsyncWorldEdit is optional; it is needed for FAWE edit tracking and WorldEdit selection features.
 
 ## Keep private information out of issues
 

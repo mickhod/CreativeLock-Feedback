@@ -1,0 +1,93 @@
+name: Bug report
+description: Report a problem with the CreativeLock Paper plugin
+title: "[Bug]: "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Before submitting, check whether the problem has already been reported.
+        Please remove passwords, database credentials, and other private information
+        from logs or configuration snippets.
+  - type: input
+    id: plugin-version
+    attributes:
+      label: CreativeLock version
+      description: The plugin version shown in the server startup log or /plugins.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: server-software
+    attributes:
+      label: Server software and Minecraft version
+      description: Include the server type and full version/build.
+      placeholder: "Paper 26.1.2 build 74"
+    validations:
+      required: true
+  - type: input
+    id: java-version
+    attributes:
+      label: Java version
+      placeholder: "Java 25"
+    validations:
+      required: true
+  - type: input
+    id: worldedit-version
+    attributes:
+      label: FAWE or WorldEdit version
+      description: Include the version, or enter Not installed if the issue is unrelated.
+      placeholder: "FastAsyncWorldEdit version, WorldEdit version, or Not installed"
+    validations:
+      required: false
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you expected to happen instead.
+      placeholder: Describe the actual and expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: How can it be reproduced?
+      description: List the steps to trigger the problem.
+      placeholder: |
+        1. Set up ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: permissions
+    attributes:
+      label: Relevant permissions and player mode
+      description: List the player's game mode and relevant CreativeLock permissions.
+      placeholder: "For example: Creative, creativelock.use, creativelock.bypass not granted"
+    validations:
+      required: false
+  - type: textarea
+    id: config
+    attributes:
+      label: Relevant configuration
+      description: Paste only the settings related to the issue. Remove secrets first.
+      render: yaml
+    validations:
+      required: false
+  - type: textarea
+    id: logs
+    attributes:
+      label: Server log or error message
+      description: Include the relevant console output or stack trace, if available.
+      render: text
+    validations:
+      required: false
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or additional details
+      description: Add screenshots or other information that may help diagnose the issue.
+    validations:
+      required: false

@@ -1,0 +1,34 @@
+name: Feature request
+description: Suggest an idea for the CreativeLock Paper plugin
+title: "[Feature]: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Before submitting, check whether someone has already suggested this feature.
+        Please do not include passwords, database credentials, or other private information.
+  - type: textarea
+    id: need
+    attributes:
+      label: What would you like CreativeLock to do?
+      description: Describe the problem or server administration need behind the idea.
+      placeholder: What are you trying to control or protect on your server?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: How should it work?
+      description: Describe your proposed behavior, configuration, or command.
+      placeholder: Explain how you expect the feature to behave for players and administrators.
+    validations:
+      required: true
+  - type: textarea
+    id: extras
+    attributes:
+      label: Anything else?
+      description: Add examples, screenshots, or other helpful details.
+    validations:
+      required: false
